@@ -30,7 +30,6 @@
   },
   "dependencies": {
     "autoprefixer": "10.4.5",
-    "flatpickr": "^4.6.13",
     "normalize.css": "^8.0.1",
     "notiflix": "^3.2.5"
   }
