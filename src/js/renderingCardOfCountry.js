@@ -6,6 +6,7 @@ function renderingCardOfCountry(
   listOfCountries
 ) {
   ulCountriesRef.innerHTML = "";
+  divCountryInfoRef.innerHTML = "";
   const { name, capital, population, flags, languages } = listOfCountries[0];
   console.log(listOfCountries[0]);
   const img = document.createElement("img");
@@ -46,7 +47,7 @@ function renderingCardOfCountry(
   Object.values(languages).forEach((language) => {
     const spanLanguages = document.createElement("span");
     spanLanguages.classList.add("value");
-    spanLanguages.textContent = language;
+    spanLanguages.textContent = language + ",";
     pLanguages.append(spanLanguages);
   });
   divCountryInfoRef.append(pLanguages);

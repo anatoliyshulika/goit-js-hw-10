@@ -30,6 +30,7 @@
   },
   "dependencies": {
     "autoprefixer": "10.4.5",
+    "lodash.debounce": "^4.0.8",
     "normalize.css": "^8.0.1",
     "notiflix": "^3.2.5"
   }

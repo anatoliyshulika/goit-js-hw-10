@@ -5,6 +5,7 @@ function renderingListOfCountries(
   divCountryInfoRef,
   listOfCountries
 ) {
+  ulCountriesRef.innerHTML = "";
   divCountryInfoRef.innerHTML = "";
   const arr = [];
   listOfCountries.forEach((country) => {
@@ -23,6 +24,5 @@ function renderingListOfCountries(
     li.classList.add("item");
     arr.push(li);
   });
-  ulCountriesRef.innerHTML = "";
   ulCountriesRef.append(...arr);
 }
