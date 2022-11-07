@@ -15,5 +15,7 @@ function fetchCountries(baseUrl, name, requestParams) {
     .then((data) => {
       return data;
     })
-    .catch(console.error("Oops, there is no country with that name"));
+    .catch(() => {
+      console.error("Oops, there is no country with that name");
+    });
 }
